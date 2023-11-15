@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screenshot on Click</title>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <button id="captureButton">Capture Screenshot</button>
+
+  <div id="screenshotContainer"></div>
+
+  <script>
+    document.getElementById('captureButton').addEventListener('click', function() {
+      html2canvas(document.body).then(function(canvas) {
+        // キャンバスからDataURLを取得
+        var imageData = canvas.toDataURL();
+
+        // 画像データをページ内に表示
+        var screenshotContainer = document.getElementById('screenshotContainer');
+        screenshotContainer.innerHTML = '<img src="' + imageData + '" alt="Screenshot">';
+      });
+    });
+  </script>
+</body>
+</html>

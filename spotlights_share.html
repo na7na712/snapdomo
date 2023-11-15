@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCLT2WB2EF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCLT2WB2EF');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スポトレチェッカー</title>
+    <style>
+        /* チェックボックスを大きくするスタイル */
+        .large-checkbox {
+            transform: scale(2); /* チェックボックスのサイズを大きく */
+        }
+
+        /* ボタン共通のスタイル */
+        .large-button {
+            font-size: 20px; /* フォントサイズを調整してボタンを大きくする */
+            padding: 10px 20px; /* パディングを設定してボタンのサイズを調整 */
+        }
+
+        /* チェックボックスを中央寄せにするスタイル */
+        input[type="checkbox"] {
+            display: block; /* チェックボックスをブロック要素に変更 */
+            margin: 0 auto; /* 左右のマージンを自動で調整して中央寄せにする */
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          z-index: 1000;
+        }
+    
+        header nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+        }
+    
+        header nav ul li {
+          margin-right: 20px;
+        }
+    
+        header nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        header nav ul li a:hover {
+          color: #ffd700;
+        }
+    
+        section {
+          padding: 40px 20px 20px; /* 上部の余白: 60px, 右部の余白: 20px, 下部の余白: 20px, 左部の余白: 20px */
+        }
+    
+        section h2 {
+          color: #333;
+        }
+    
+        section p {
+          color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="cardlist.html">カードリスト</a></li>
+            <li><a href="locationlist.html">ロケーションリスト</a></li>
+            <li><a href="spotlights.html">スポットライトトレジャー</a></li>
+            <li><a href="spotlights_share.html">スポトレチェッカー</a></li>
+    
+            <!-- 他のセクションへのリンクを追加 -->
+          </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>スポトレチェッカー(11/8~12/6)</h1>
+        <p><b>狙っているスポットライトトレジャーを皆にシェアしよう</b></p>
+        <p><b>欲しいカードをチェックして送信をクリック</b></p>
+        
+
+        <form>
+        <h2>11/8~11/15</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="card1" class="large-checkbox" name="card" value="card1"></td>
+                    <td><input type="checkbox" id="card2" class="large-checkbox" name="card" value="card2"></td>
+                    <td><input type="checkbox" id="card3" class="large-checkbox" name="card" value="card3"></td>    
+                    <td><input type="checkbox" id="card4" class="large-checkbox" name="card" value="card4"></td>
+                    <td><input type="checkbox" id="card5" class="large-checkbox" name="card" value="card5"></td>
+                    <td><input type="checkbox" id="card6" class="large-checkbox" name="card" value="card6"></td>    
+                </tr>
+                <tr>
+                    <td><a href="cardtext/alioth.html"><img src="cardimage/alioth.webp" alt="alioth" width="100"></a></td>
+                    <td><a href="cardtext/alioth.html"><img src="cardimage/alioth118.webp" alt="alioth118" width="100"></a></td>
+                    <td><a href="cardtext/knull.html"><img src="cardimage/knull.webp" alt="knull" width="100"></a></td>
+                    <td><a href="cardtext/knull.html"><img src="cardimage/knull118.webp" alt="knull118" width="100"></a></td>                
+                    <td><a href="cardtext/negasonic-teenage-warhead.html"><img src="cardimage/negasonic-teenage-warhead.webp" alt="negasonic-teenage-warhead" width="100"></a></td>
+                    <td><a href="cardtext/negasonic-teenage-warhead.html"><img src="cardimage/negasonic-teenage-warhead118.webp" alt="negasonic-teenage-warhead118" width="100"></a></td>
+                </tr>
+            </table>
+
+        <h2>11/15~11/22</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="card7" class="large-checkbox" name="card" value="card7"></td>
+                    <td><input type="checkbox" id="card8" class="large-checkbox" name="card" value="card8"></td>
+                    <td><input type="checkbox" id="card9" class="large-checkbox" name="card" value="card9"></td>    
+                    <td><input type="checkbox" id="card10" class="large-checkbox" name="card" value="card10"></td>
+                    <td><input type="checkbox" id="card11" class="large-checkbox" name="card" value="card11"></td>
+                    <td><input type="checkbox" id="card12" class="large-checkbox" name="card" value="card12"></td>    
+                </tr>
+                <tr>
+                    <td><a href="cardtext/gladiator.html"><img src="cardimage/gladiator.webp" alt="gladiator" width="100"></a></td>
+                    <td><a href="cardtext/gladiator.html"><img src="cardimage/gladiator1115.webp" alt="gladiator1115" width="100"></a></td>
+                    <td><a href="cardtext/mirage.html"><img src="cardimage/mirage.webp" alt="mirage" width="100"></a></td>
+                    <td><a href="cardtext/mirage.html"><img src="cardimage/mirage1115.webp" alt="mirage1115" width="100"></a></td>
+                    <td><a href="cardtext/loki.html"><img src="cardimage/loki.webp" alt="loki" width="100"></a></td>
+                    <td><a href="cardtext/loki.html"><img src="cardimage/loki1115.webp" alt="loki1115" width="100"></a></td>
+                </tr>
+            </table>
+
+        <h2>11/22~11/29</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="card13" class="large-checkbox" name="card" value="card13"></td>
+                    <td><input type="checkbox" id="card14" class="large-checkbox" name="card" value="card14"></td>
+                    <td><input type="checkbox" id="card15" class="large-checkbox" name="card" value="card15"></td>    
+                    <td><input type="checkbox" id="card16" class="large-checkbox" name="card" value="card16"></td>
+                    <td><input type="checkbox" id="card17" class="large-checkbox" name="card" value="card17"></td>
+                    <td><input type="checkbox" id="card18" class="large-checkbox" name="card" value="card18"></td>    
+                </tr>
+                <tr>
+                    <td><a href="cardtext/annihilus.html"><img src="cardimage/annihilus.webp" alt="annihilus" width="100"></a></td>
+                    <td><a href="cardtext/annihilus.html"><img src="cardimage/annihilus1122.webp" alt="annihilus1122" width="100"></a></td>
+                    <td><a href="cardtext/daken.html"><img src="cardimage/daken.webp" alt="daken" width="100"></a></td>
+                    <td><a href="cardtext/daken.html"><img src="cardimage/daken1122.webp" alt="daken1122" width="100"></a></td>
+                    <td><a href="cardtext/x-23.html"><img src="cardimage/x-23.webp" alt="x-23" width="100"></a></td>
+                    <td><a href="cardtext/x-23.html"><img src="cardimage/x-231122.webp" alt="x-231122" width="100"></a></td>
+
+                </tr>
+            </table>    
+
+        <h2>11/29~12/6</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="card19" class="large-checkbox" name="card" value="card19"></td>
+                    <td><input type="checkbox" id="card20" class="large-checkbox" name="card" value="card20"></td>
+                    <td><input type="checkbox" id="card21" class="large-checkbox" name="card" value="card21"></td>    
+                    <td><input type="checkbox" id="card22" class="large-checkbox" name="card" value="card22"></td>
+                    <td><input type="checkbox" id="card23" class="large-checkbox" name="card" value="card23"></td>
+                    <td><input type="checkbox" id="card24" class="large-checkbox" name="card" value="card24"></td>    
+
+                </tr>
+                <tr>
+                    <td><a href="cardtext/martyr.html"><img src="cardimage/martyr.webp" alt="martyr" width="100"></a></td>
+                    <td><a href="cardtext/martyr.html"><img src="cardimage/martyr1129.webp" alt="martyr1129" width="100"></a></td>
+                    <td><a href="cardtext/jean-grey.html"><img src="cardimage/jean-grey.webp" alt="jean-grey" width="100"></a></td>
+                    <td><a href="cardtext/jean-grey.html"><img src="cardimage/jean-grey1129.webp" alt="jean-grey1129" width="100"></a></td>
+                    <td><a href="cardtext/spider-man-2099.html"><img src="cardimage/spider-man-2099.webp" alt="spider-man-2099" width="100"></a></td>
+                    <td><a href="cardtext/spider-man-2099.html"><img src="cardimage/spider-man-20991129.png" alt="spider-man-20991129" width="100"></a></td>
+                </tr>
+            </table>    
+
+            <button type="button" id="check" class="large-button">送信</button>
+        </form>
+    </section>
+
+    <script>
+
+        // ボタンをクリックしたときに別のページに移動
+        document.getElementById("check").addEventListener("click", function () {
+            const isChecked1 = card1.checked;
+            const isChecked2 = card2.checked;
+            const isChecked3 = card3.checked;
+            const isChecked4 = card4.checked;
+            const isChecked5 = card5.checked;
+            const isChecked6 = card6.checked;
+            const isChecked7 = card7.checked;
+            const isChecked8 = card8.checked;
+            const isChecked9 = card9.checked;
+            const isChecked10 = card10.checked;
+            const isChecked11 = card11.checked;
+            const isChecked12 = card12.checked;
+            const isChecked13 = card13.checked;
+            const isChecked14 = card14.checked;
+            const isChecked15 = card15.checked;
+            const isChecked16 = card16.checked;
+            const isChecked17 = card17.checked;
+            const isChecked18 = card18.checked;
+            const isChecked19 = card19.checked;
+            const isChecked20 = card20.checked;
+            const isChecked21 = card21.checked;
+            const isChecked22 = card22.checked;
+            const isChecked23 = card23.checked;
+            const isChecked24 = card24.checked;
+            
+
+            // クエリパラメータを含む URL を生成
+            const url = "spotlights_share_next.html" +
+                "?isChecked1=" + isChecked1 +
+                "&isChecked2=" + isChecked2 +
+                "&isChecked3=" + isChecked3 +
+                "&isChecked4=" + isChecked4 +
+                "&isChecked5=" + isChecked5 +
+                "&isChecked6=" + isChecked6 +
+                "&isChecked7=" + isChecked7 +
+                "&isChecked8=" + isChecked8 +
+                "&isChecked9=" + isChecked9 +
+                "&isChecked10=" + isChecked10 +
+                "&isChecked11=" + isChecked11 +
+                "&isChecked12=" + isChecked12 +
+                "&isChecked13=" + isChecked13 +
+                "&isChecked14=" + isChecked14 +
+                "&isChecked15=" + isChecked15 +
+                "&isChecked16=" + isChecked16 +
+                "&isChecked17=" + isChecked17 +
+                "&isChecked18=" + isChecked18 +
+                "&isChecked19=" + isChecked19 +
+                "&isChecked20=" + isChecked20 +
+                "&isChecked21=" + isChecked21 +
+                "&isChecked22=" + isChecked22 +
+                "&isChecked23=" + isChecked23 +
+                "&isChecked24=" + isChecked24;
+
+            // 別のページにリダイレクト
+            window.location.href = url;
+        });
+
+    </script>
+
+</body>
+</html>
