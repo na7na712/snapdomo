@@ -19,6 +19,7 @@
           color: #fff;
           padding: 10px;
           z-index: 1000;
+          flex-direction: column; /* ナビゲーションリンクを縦に配置 */
         }
     
         header nav ul {
@@ -43,7 +44,7 @@
         }
     
         section {
-          padding: 40px 20px 20px; /* 上部の余白: 60px, 右部の余白: 20px, 下部の余白: 20px, 左部の余白: 20px */
+          padding: 60px 20px 20px; /* 上部の余白: 60px, 右部の余白: 20px, 下部の余白: 20px, 左部の余白: 20px */
         }
     
         section h2 {
@@ -67,12 +68,83 @@
     
             <!-- 他のセクションへのリンクを追加 -->
           </ul>
+        
+          <ul>
+          <!-- ナビゲーションリンク -->
+            <li><a href="#section0">0コスト</a></li>
+            <li><a href="#section1">1コスト</a></li>
+            <li><a href="#section2">2コスト</a></li>
+            <li><a href="#section3">3コスト</a></li>
+            <li><a href="#section4">4コスト</a></li>
+            <li><a href="#section5">5コスト</a></li>
+            <li><a href="#section6">6コスト</a></li>
+            <li><a href="#section7">7コスト以上</a></li>
+          </ul>
         </nav>
     </header>
+
+    <!-- ページセクション -->
+    <section id="section0">
+      <h2>0コスト</h2>
+      <a href="cardtext/alioth.html"><img src="cardimage/alioth.webp" title="alioth" width="50"></a>
+    </section>
+
+    <section id="section1">
+      <h2>1コスト</h2>
+    </section>
+
     
+    <section id="section2">
+      <h2>2コスト</h2>
+    </section>
+
+    <section id="section3">
+      <h2>3コスト</h2>
+    </section>
+
+    <section id="section4">
+      <h2>4コスト</h2>
+    </section>
+
+    <section id="section5">
+      <h2>5コスト</h2>
+    </section>
+
+    <section id="section6">
+      <h2>6コスト</h2>
+    </section>
+
+    <section id="section7">
+      <h2>7コスト以上</h2>
+    </section>
+
     <section>
 
     </section>
+
+    <script>
+      // ページが読み込まれた際に実行される処理
+      document.addEventListener('DOMContentLoaded', function() {
+          // ナビゲーションリンクのクリックイベントを設定
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                  e.preventDefault();
+  
+                  // クリックされたリンクのhref属性から対象の要素を取得
+                  const targetId = this.getAttribute('href').substring(1);
+                  const targetElement = document.getElementById(targetId);
+  
+                  // 対象の要素が存在する場合はスクロール
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop,
+                          behavior: 'smooth' // スムーズスクロール
+                      });
+                  }
+              });
+          });
+      });
+  </script>
     
 </body>
 </html>
