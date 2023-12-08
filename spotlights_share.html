@@ -15,23 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スポトレチェッカー</title>
     <style>
-        /* チェックボックスを大きくするスタイル */
-        .large-checkbox {
-            transform: scale(2); /* チェックボックスのサイズを大きく */
-        }
-
-        /* ボタン共通のスタイル */
-        .large-button {
-            font-size: 20px; /* フォントサイズを調整してボタンを大きくする */
-            padding: 10px 20px; /* パディングを設定してボタンのサイズを調整 */
-        }
-
-        /* チェックボックスを中央寄せにするスタイル */
-        input[type="checkbox"] {
-            display: block; /* チェックボックスをブロック要素に変更 */
-            margin: 0 auto; /* 左右のマージンを自動で調整して中央寄せにする */
-        }
-
         body {
           margin: 0;
           padding: 0;
@@ -77,8 +60,26 @@
           color: #333;
         }
     
-        section p {
-          color: #666;
+        p {
+        font-weight: bold;
+        }
+
+        .clickable {
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center; /* テキストを中央揃えにするスタイルを追加 */
+        }
+
+        /* 各テキストに異なる色を設定 */
+        .color  { color: black;}
+        .color1 { color: blue; }
+        .color2 { color: red; }
+        .color3 { color: black; }
+
+        /* ボタン共通のスタイル */
+        .large-button {
+            font-size: 20px; /* フォントサイズを調整してボタンを大きくする */
+            padding: 10px 20px; /* パディングを設定してボタンのサイズを調整 */
         }
 
     </style>
@@ -99,158 +100,457 @@
     </header>
     
     <section>
-        <h1>スポトレチェッカー(11/8~12/6)</h1>
+        <h1>スポトレチェッカー(12/6~1/3)</h1>
         <p><b>狙っているスポットライトトレジャーを皆にシェアしよう</b></p>
-        <p><b>欲しいカードをチェックして送信をクリック</b></p>
+        <p><b>文字をクリックしてね（いらない→持ってる→欲しい）</b></p>
+        <p><b>カードをクリックで詳細表示(クリック情報は保持されません。ページを離れると初期状態に戻ります。)</b></p>
         
-
+    
         <form>
-        <h2>11/8~11/15</h2>
+        <h2>12/6~12/13</h2>
             <table>
                 <tr>
-                    <td><input type="checkbox" id="card1" class="large-checkbox" name="card" value="card1"></td>
-                    <td><input type="checkbox" id="card2" class="large-checkbox" name="card" value="card2"></td>
-                    <td><input type="checkbox" id="card3" class="large-checkbox" name="card" value="card3"></td>    
-                    <td><input type="checkbox" id="card4" class="large-checkbox" name="card" value="card4"></td>
-                    <td><input type="checkbox" id="card5" class="large-checkbox" name="card" value="card5"></td>
-                    <td><input type="checkbox" id="card6" class="large-checkbox" name="card" value="card6"></td>    
+                    <td><p id="changeableText1" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText2" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText3" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText4" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText5" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText6" class="clickable color">いらない</p></td>
                 </tr>
                 <tr>
-                    <td><a href="cardtext/alioth.html"><img src="cardimage/alioth.webp" alt="alioth" width="100"></a></td>
-                    <td><a href="cardtext/alioth.html"><img src="cardimage/alioth118.webp" alt="alioth118" width="100"></a></td>
-                    <td><a href="cardtext/knull.html"><img src="cardimage/knull.webp" alt="knull" width="100"></a></td>
-                    <td><a href="cardtext/knull.html"><img src="cardimage/knull118.webp" alt="knull118" width="100"></a></td>                
-                    <td><a href="cardtext/negasonic-teenage-warhead.html"><img src="cardimage/negasonic-teenage-warhead.webp" alt="negasonic-teenage-warhead" width="100"></a></td>
-                    <td><a href="cardtext/negasonic-teenage-warhead.html"><img src="cardimage/negasonic-teenage-warhead118.webp" alt="negasonic-teenage-warhead118" width="100"></a></td>
+                    <td><a href="cardtext/man-thing.html"><img src="cardimage/man-thing.webp" width="100"></a></td>
+                    <td><a href="cardtext/man-thing.html"><img src="cardimage/man-thing126.webp" width="100"></a></td>
+                    <td><a href="cardtext/stegron.html"><img src="cardimage/stegron.webp" width="100"></a></td>
+                    <td><a href="cardtext/stegron.html"><img src="cardimage/stegron126.webp" width="100"></a></td>                
+                    <td><a href="cardtext/jeff.html"><img src="cardimage/jeff-the-baby-land-shark.webp" width="100"></a></td>
+                    <td><a href="cardtext/jeff.html"><img src="cardimage/jeff-the-baby-land-shark126.webp" width="100"></a></td>
                 </tr>
             </table>
-
-        <h2>11/15~11/22</h2>
+    
+        <h2>12/13~12/20</h2>
             <table>
                 <tr>
-                    <td><input type="checkbox" id="card7" class="large-checkbox" name="card" value="card7"></td>
-                    <td><input type="checkbox" id="card8" class="large-checkbox" name="card" value="card8"></td>
-                    <td><input type="checkbox" id="card9" class="large-checkbox" name="card" value="card9"></td>    
-                    <td><input type="checkbox" id="card10" class="large-checkbox" name="card" value="card10"></td>
-                    <td><input type="checkbox" id="card11" class="large-checkbox" name="card" value="card11"></td>
-                    <td><input type="checkbox" id="card12" class="large-checkbox" name="card" value="card12"></td>    
+                    <td><p id="changeableText7" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText8" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText9" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText10" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText11" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText12" class="clickable color">いらない</p></td>
                 </tr>
                 <tr>
-                    <td><a href="cardtext/gladiator.html"><img src="cardimage/gladiator.webp" alt="gladiator" width="100"></a></td>
-                    <td><a href="cardtext/gladiator.html"><img src="cardimage/gladiator1115.webp" alt="gladiator1115" width="100"></a></td>
-                    <td><a href="cardtext/mirage.html"><img src="cardimage/mirage.webp" alt="mirage" width="100"></a></td>
-                    <td><a href="cardtext/mirage.html"><img src="cardimage/mirage1115.webp" alt="mirage1115" width="100"></a></td>
-                    <td><a href="cardtext/loki.html"><img src="cardimage/loki.webp" alt="loki" width="100"></a></td>
-                    <td><a href="cardtext/loki.html"><img src="cardimage/loki1115.webp" alt="loki1115" width="100"></a></td>
+                    <td><a href="cardtext/blob.html"><img src="cardimage/blob.webp" alt="blob" width="100"></a></td>
+                    <td><a href="cardtext/blob.html"><img src="cardimage/blob1213.webp" alt="blob1213" width="100"></a></td>
+                    <td><a href="cardtext/the-living-tribunal.html"><img src="cardimage/the-living-tribunal.webp" width="100"></a></td>
+                    <td><a href="cardtext/the-living-tribunal.html"><img src="cardimage/the-living-tribunal1213.webp" width="100"></a></td>
+                    <td><a href="cardtext/ravonna-renslayer.html"><img src="cardimage/ravonna-renslayer.webp" width="100"></a></td>
+                    <td><a href="cardtext/ravonna-renslayer.html"><img src="cardimage/ravonna-renslayer1213.webp" width="100"></a></td>
                 </tr>
             </table>
-
-        <h2>11/22~11/29</h2>
+    
+        <h2>12/20~12/27</h2>
             <table>
                 <tr>
-                    <td><input type="checkbox" id="card13" class="large-checkbox" name="card" value="card13"></td>
-                    <td><input type="checkbox" id="card14" class="large-checkbox" name="card" value="card14"></td>
-                    <td><input type="checkbox" id="card15" class="large-checkbox" name="card" value="card15"></td>    
-                    <td><input type="checkbox" id="card16" class="large-checkbox" name="card" value="card16"></td>
-                    <td><input type="checkbox" id="card17" class="large-checkbox" name="card" value="card17"></td>
-                    <td><input type="checkbox" id="card18" class="large-checkbox" name="card" value="card18"></td>    
+                    <td><p id="changeableText13" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText14" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText15" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText16" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText17" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText18" class="clickable color">いらない</p></td>
                 </tr>
                 <tr>
-                    <td><a href="cardtext/annihilus.html"><img src="cardimage/annihilus.webp" alt="annihilus" width="100"></a></td>
-                    <td><a href="cardtext/annihilus.html"><img src="cardimage/annihilus1122.webp" alt="annihilus1122" width="100"></a></td>
-                    <td><a href="cardtext/daken.html"><img src="cardimage/daken.webp" alt="daken" width="100"></a></td>
-                    <td><a href="cardtext/daken.html"><img src="cardimage/daken1122.webp" alt="daken1122" width="100"></a></td>
-                    <td><a href="cardtext/x-23.html"><img src="cardimage/x-23.webp" alt="x-23" width="100"></a></td>
-                    <td><a href="cardtext/x-23.html"><img src="cardimage/x-231122.webp" alt="x-231122" width="100"></a></td>
-
+                    <td><a href="cardtext/havok.html"><img src="cardimage/havok.webp" width="100"></a></td>
+                    <td><a href="cardtext/havok.html"><img src="cardimage/havok1220.webp" width="100"></a></td>
+                    <td><a href="cardtext/nico-minoru.html"><img src="cardimage/nico-minoru.webp" width="100"></a></td>
+                    <td><a href="cardtext/nico-minoru.html"><img src="cardimage/nico-minoru1220.webp" width="100"></a></td>
+                    <td><a href="cardtext/legion.html"><img src="cardimage/legion.webp" width="100"></a></td>
+                    <td><a href="cardtext/legion.html"><img src="cardimage/legion1220.webp" width="100"></a></td>
+    
                 </tr>
             </table>    
-
-        <h2>11/29~12/6</h2>
+    
+        <h2>12/27~1/3</h2>
             <table>
                 <tr>
-                    <td><input type="checkbox" id="card19" class="large-checkbox" name="card" value="card19"></td>
-                    <td><input type="checkbox" id="card20" class="large-checkbox" name="card" value="card20"></td>
-                    <td><input type="checkbox" id="card21" class="large-checkbox" name="card" value="card21"></td>    
-                    <td><input type="checkbox" id="card22" class="large-checkbox" name="card" value="card22"></td>
-                    <td><input type="checkbox" id="card23" class="large-checkbox" name="card" value="card23"></td>
-                    <td><input type="checkbox" id="card24" class="large-checkbox" name="card" value="card24"></td>    
-
+                    <td><p id="changeableText19" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText20" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText21" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText22" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText23" class="clickable color">いらない</p></td>
+                    <td><p id="changeableText24" class="clickable color">いらない</p></td>
                 </tr>
                 <tr>
-                    <td><a href="cardtext/martyr.html"><img src="cardimage/martyr.webp" alt="martyr" width="100"></a></td>
-                    <td><a href="cardtext/martyr.html"><img src="cardimage/martyr1129.webp" alt="martyr1129" width="100"></a></td>
-                    <td><a href="cardtext/jean-grey.html"><img src="cardimage/jean-grey.webp" alt="jean-grey" width="100"></a></td>
-                    <td><a href="cardtext/jean-grey.html"><img src="cardimage/jean-grey1129.webp" alt="jean-grey1129" width="100"></a></td>
-                    <td><a href="cardtext/spider-man-2099.html"><img src="cardimage/spider-man-2099.webp" alt="spider-man-2099" width="100"></a></td>
-                    <td><a href="cardtext/spider-man-2099.html"><img src="cardimage/spider-man-20991129.png" alt="spider-man-20991129" width="100"></a></td>
+                    <td><a href="cardtext/selene.html"><img src="cardimage/selene.webp" width="100"></a></td>
+                    <td><a href="cardtext/selene.html"><img src="cardimage/selene1227.webp" width="100"></a></td>
+                    <td><a href="cardtext/iron-lad.html"><img src="cardimage/iron-lad.webp" width="100"></a></td>
+                    <td><a href="cardtext/iron-lad.html"><img src="cardimage/iron-lad1227.webp" width="100"></a></td>
+                    <td><a href="cardtext/black-knight.html"><img src="cardimage/black-knight.webp" width="100"></a></td>
+                    <td><a href="cardtext/black-knight.html"><img src="cardimage/black-knight1227.webp" width="100"></a></td>
                 </tr>
             </table>    
-
-            <button type="button" id="check" class="large-button">送信</button>
+    
+            <button type="button" id="share-button" class="large-button">Xでポストする(スクショを準備してね)</button>
         </form>
-    </section>
+        </section>
 
     <script>
 
-        // ボタンをクリックしたときに別のページに移動
-        document.getElementById("check").addEventListener("click", function () {
-            const isChecked1 = card1.checked;
-            const isChecked2 = card2.checked;
-            const isChecked3 = card3.checked;
-            const isChecked4 = card4.checked;
-            const isChecked5 = card5.checked;
-            const isChecked6 = card6.checked;
-            const isChecked7 = card7.checked;
-            const isChecked8 = card8.checked;
-            const isChecked9 = card9.checked;
-            const isChecked10 = card10.checked;
-            const isChecked11 = card11.checked;
-            const isChecked12 = card12.checked;
-            const isChecked13 = card13.checked;
-            const isChecked14 = card14.checked;
-            const isChecked15 = card15.checked;
-            const isChecked16 = card16.checked;
-            const isChecked17 = card17.checked;
-            const isChecked18 = card18.checked;
-            const isChecked19 = card19.checked;
-            const isChecked20 = card20.checked;
-            const isChecked21 = card21.checked;
-            const isChecked22 = card22.checked;
-            const isChecked23 = card23.checked;
-            const isChecked24 = card24.checked;
-            
+    //要素１//
+    var changeableText1 = document.getElementById('changeableText1');
+    var textArray1 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses1 = ['color1', 'color2', 'color3'];
+    var currentIndex1 = 0;
+    changeableText1.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText1.innerHTML = textArray1[currentIndex1];    
+        // クラスを更新して異なる色を適用
+        changeableText1.className = 'clickable ' + colorClasses1[currentIndex1];
+        // インデックスを更新し、循環するようにする
+        currentIndex1 = (currentIndex1 + 1) % textArray1.length;
+    });
 
-            // クエリパラメータを含む URL を生成
-            const url = "spotlights_share_next.html" +
-                "?isChecked1=" + isChecked1 +
-                "&isChecked2=" + isChecked2 +
-                "&isChecked3=" + isChecked3 +
-                "&isChecked4=" + isChecked4 +
-                "&isChecked5=" + isChecked5 +
-                "&isChecked6=" + isChecked6 +
-                "&isChecked7=" + isChecked7 +
-                "&isChecked8=" + isChecked8 +
-                "&isChecked9=" + isChecked9 +
-                "&isChecked10=" + isChecked10 +
-                "&isChecked11=" + isChecked11 +
-                "&isChecked12=" + isChecked12 +
-                "&isChecked13=" + isChecked13 +
-                "&isChecked14=" + isChecked14 +
-                "&isChecked15=" + isChecked15 +
-                "&isChecked16=" + isChecked16 +
-                "&isChecked17=" + isChecked17 +
-                "&isChecked18=" + isChecked18 +
-                "&isChecked19=" + isChecked19 +
-                "&isChecked20=" + isChecked20 +
-                "&isChecked21=" + isChecked21 +
-                "&isChecked22=" + isChecked22 +
-                "&isChecked23=" + isChecked23 +
-                "&isChecked24=" + isChecked24;
+    //要素2//
+    var changeableText2 = document.getElementById('changeableText2');
+    var textArray2 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses2 = ['color1', 'color2', 'color3'];
+    var currentIndex2 = 0;
+    changeableText2.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText2.innerHTML = textArray2[currentIndex2];
+        // クラスを更新して異なる色を適用
+        changeableText2.className = 'clickable ' + colorClasses2[currentIndex2];
+        // インデックスを更新し、循環するようにする
+        currentIndex2 = (currentIndex2 + 1) % textArray2.length;
+    });
 
-            // 別のページにリダイレクト
-            window.location.href = url;
+    //要素3//
+    var changeableText3 = document.getElementById('changeableText3');
+    var textArray3 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses3 = ['color1', 'color2', 'color3'];
+    var currentIndex3 = 0;
+    changeableText3.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText3.innerHTML = textArray3[currentIndex3];
+        // クラスを更新して異なる色を適用
+        changeableText3.className = 'clickable ' + colorClasses3[currentIndex3];
+        // インデックスを更新し、循環するようにする
+        currentIndex3 = (currentIndex3 + 1) % textArray3.length;
+    });
+
+
+    //要素4//
+    var changeableText4 = document.getElementById('changeableText4');
+    var textArray4 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses4 = ['color1', 'color2', 'color3'];
+    var currentIndex4 = 0;
+    changeableText4.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText4.innerHTML = textArray4[currentIndex4];
+        // クラスを更新して異なる色を適用
+        changeableText4.className = 'clickable ' + colorClasses4[currentIndex4];
+        // インデックスを更新し、循環するようにする
+        currentIndex4 = (currentIndex4 + 1) % textArray4.length;
+    });
+
+    //要素5//
+    var changeableText5 = document.getElementById('changeableText5');
+    var textArray5 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses5 = ['color1', 'color2', 'color3'];
+    var currentIndex5 = 0;
+    changeableText5.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText5.innerHTML = textArray5[currentIndex5];
+        // クラスを更新して異なる色を適用
+        changeableText5.className = 'clickable ' + colorClasses5[currentIndex5];
+        // インデックスを更新し、循環するようにする
+        currentIndex5 = (currentIndex5 + 1) % textArray5.length;
+    });
+
+    //要素6//
+    var changeableText6 = document.getElementById('changeableText6');
+    var textArray6 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses6 = ['color1', 'color2', 'color3'];
+    var currentIndex6 = 0;
+    changeableText6.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText6.innerHTML = textArray6[currentIndex6];
+        // クラスを更新して異なる色を適用
+        changeableText6.className = 'clickable ' + colorClasses6[currentIndex6];
+        // インデックスを更新し、循環するようにする
+        currentIndex6 = (currentIndex6 + 1) % textArray6.length;
+    });
+
+    //要素7//
+    var changeableText7 = document.getElementById('changeableText7');
+    var textArray7 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses7 = ['color1', 'color2', 'color3'];
+    var currentIndex7 = 0;
+    changeableText7.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText7.innerHTML = textArray7[currentIndex7];
+        // クラスを更新して異なる色を適用
+        changeableText7.className = 'clickable ' + colorClasses7[currentIndex7];
+        // インデックスを更新し、循環するようにする
+        currentIndex7 = (currentIndex7 + 1) % textArray7.length;
+    });
+
+    //要素8//
+    var changeableText8 = document.getElementById('changeableText8');
+    var textArray8 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses8 = ['color1', 'color2', 'color3'];
+    var currentIndex8 = 0;
+    changeableText8.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText8.innerHTML = textArray8[currentIndex8];
+        // クラスを更新して異なる色を適用
+        changeableText8.className = 'clickable ' + colorClasses8[currentIndex8];
+        // インデックスを更新し、循環するようにする
+        currentIndex8 = (currentIndex8 + 1) % textArray8.length;
+    });
+
+    //要素9//
+    var changeableText9 = document.getElementById('changeableText9');
+    var textArray9 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses9 = ['color1', 'color2', 'color3'];
+    var currentIndex9 = 0;
+    changeableText9.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText9.innerHTML = textArray9[currentIndex9];
+        // クラスを更新して異なる色を適用
+        changeableText9.className = 'clickable ' + colorClasses9[currentIndex9];
+        // インデックスを更新し、循環するようにする
+        currentIndex9 = (currentIndex9 + 1) % textArray9.length;
+    });
+
+    //要素10//
+    var changeableText10 = document.getElementById('changeableText10');
+    var textArray10 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses10 = ['color1', 'color2', 'color3'];
+    var currentIndex10 = 0;
+    changeableText10.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText10.innerHTML = textArray10[currentIndex10];
+        // クラスを更新して異なる色を適用
+        changeableText10.className = 'clickable ' + colorClasses10[currentIndex10];
+        // インデックスを更新し、循環するようにする
+        currentIndex10 = (currentIndex10 + 1) % textArray10.length;
+    });
+
+    //要素11//
+    var changeableText11 = document.getElementById('changeableText11');
+    var textArray11 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses11 = ['color1', 'color2', 'color3'];
+    var currentIndex11 = 0;
+    changeableText11.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText11.innerHTML = textArray11[currentIndex11];
+        // クラスを更新して異なる色を適用
+        changeableText11.className = 'clickable ' + colorClasses11[currentIndex11];
+        // インデックスを更新し、循環するようにする
+        currentIndex11 = (currentIndex11 + 1) % textArray11.length;
+    });
+
+    //要素12//
+    var changeableText12 = document.getElementById('changeableText12');
+    var textArray12 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses12 = ['color1', 'color2', 'color3'];
+    var currentIndex12 = 0;
+    changeableText12.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText12.innerHTML = textArray12[currentIndex12];
+        // クラスを更新して異なる色を適用
+        changeableText12.className = 'clickable ' + colorClasses12[currentIndex12];
+        // インデックスを更新し、循環するようにする
+        currentIndex12 = (currentIndex12 + 1) % textArray12.length;
+    });
+
+    //要素13//
+    var changeableText13 = document.getElementById('changeableText13');
+    var textArray13 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses13 = ['color1', 'color2', 'color3'];
+    var currentIndex13 = 0;
+    changeableText13.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText13.innerHTML = textArray13[currentIndex13];
+        // クラスを更新して異なる色を適用
+        changeableText13.className = 'clickable ' + colorClasses13[currentIndex13];
+        // インデックスを更新し、循環するようにする
+        currentIndex13 = (currentIndex13 + 1) % textArray13.length;
+    });
+
+    //要素14//
+    var changeableText14 = document.getElementById('changeableText14');
+    var textArray14 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses14 = ['color1', 'color2', 'color3'];
+    var currentIndex14 = 0;
+    changeableText14.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText14.innerHTML = textArray14[currentIndex14];
+        // クラスを更新して異なる色を適用
+        changeableText14.className = 'clickable ' + colorClasses14[currentIndex14];
+        // インデックスを更新し、循環するようにする
+        currentIndex14 = (currentIndex14 + 1) % textArray14.length;
+    });
+
+    //要素15//
+    var changeableText15 = document.getElementById('changeableText15');
+    var textArray15 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses15 = ['color1', 'color2', 'color3'];
+    var currentIndex15 = 0;
+    changeableText15.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText15.innerHTML = textArray15[currentIndex15];
+        // クラスを更新して異なる色を適用
+        changeableText15.className = 'clickable ' + colorClasses15[currentIndex15];
+        // インデックスを更新し、循環するようにする
+        currentIndex15 = (currentIndex15 + 1) % textArray15.length;
+    });
+
+    //要素16//
+    var changeableText16 = document.getElementById('changeableText16');
+    var textArray16 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses16 = ['color1', 'color2', 'color3'];
+    var currentIndex16 = 0;
+    changeableText16.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText16.innerHTML = textArray16[currentIndex16];
+        // クラスを更新して異なる色を適用
+        changeableText16.className = 'clickable ' + colorClasses16[currentIndex16];
+        // インデックスを更新し、循環するようにする
+        currentIndex16 = (currentIndex16 + 1) % textArray16.length;
+    });
+
+    //要素17//
+    var changeableText17 = document.getElementById('changeableText17');
+    var textArray17 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses17 = ['color1', 'color2', 'color3'];
+    var currentIndex17 = 0;
+    changeableText17.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText17.innerHTML = textArray17[currentIndex17];
+        // クラスを更新して異なる色を適用
+        changeableText17.className = 'clickable ' + colorClasses17[currentIndex17];
+        // インデックスを更新し、循環するようにする
+        currentIndex17 = (currentIndex17 + 1) % textArray17.length;
+    });
+
+    //要素18//
+    var changeableText18 = document.getElementById('changeableText18');
+    var textArray18 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses18 = ['color1', 'color2', 'color3'];
+    var currentIndex18 = 0;
+    changeableText18.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText18.innerHTML = textArray18[currentIndex18];
+        // クラスを更新して異なる色を適用
+        changeableText18.className = 'clickable ' + colorClasses18[currentIndex18];
+        // インデックスを更新し、循環するようにする
+        currentIndex18 = (currentIndex18 + 1) % textArray18.length;
+    });
+
+    //要素19//
+    var changeableText19 = document.getElementById('changeableText19');
+    var textArray19 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses19 = ['color1', 'color2', 'color3'];
+    var currentIndex19 = 0;
+    changeableText19.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText19.innerHTML = textArray19[currentIndex19];
+        // クラスを更新して異なる色を適用
+        changeableText19.className = 'clickable ' + colorClasses19[currentIndex19];
+        // インデックスを更新し、循環するようにする
+        currentIndex19 = (currentIndex19 + 1) % textArray19.length;
+    });
+
+    //要素20//
+    var changeableText20 = document.getElementById('changeableText20');
+    var textArray20 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses20 = ['color1', 'color2', 'color3'];
+    var currentIndex20 = 0;
+    changeableText20.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText20.innerHTML = textArray20[currentIndex20];
+        // クラスを更新して異なる色を適用
+        changeableText20.className = 'clickable ' + colorClasses20[currentIndex20];
+        // インデックスを更新し、循環するようにする
+        currentIndex20 = (currentIndex20 + 1) % textArray20.length;
+    });
+
+    //要素21//
+    var changeableText21 = document.getElementById('changeableText21');
+    var textArray21 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses21 = ['color1', 'color2', 'color3'];
+    var currentIndex21 = 0;
+    changeableText21.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText21.innerHTML = textArray21[currentIndex21];
+        // クラスを更新して異なる色を適用
+        changeableText21.className = 'clickable ' + colorClasses21[currentIndex21];
+        // インデックスを更新し、循環するようにする
+        currentIndex21 = (currentIndex21 + 1) % textArray21.length;
+    });
+
+    //要素22//
+    var changeableText22 = document.getElementById('changeableText22');
+    var textArray22 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses22 = ['color1', 'color2', 'color3'];
+    var currentIndex22 = 0;
+    changeableText22.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText22.innerHTML = textArray22[currentIndex22];
+        // クラスを更新して異なる色を適用
+        changeableText22.className = 'clickable ' + colorClasses22[currentIndex22];
+        // インデックスを更新し、循環するようにする
+        currentIndex22 = (currentIndex22 + 1) % textArray22.length;
+    });
+
+    //要素23//
+    var changeableText23 = document.getElementById('changeableText23');
+    var textArray23 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses23 = ['color1', 'color2', 'color3'];
+    var currentIndex23 = 0;
+    changeableText23.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText23.innerHTML = textArray23[currentIndex23];
+        // クラスを更新して異なる色を適用
+        changeableText23.className = 'clickable ' + colorClasses23[currentIndex23];
+        // インデックスを更新し、循環するようにする
+        currentIndex23 = (currentIndex23 + 1) % textArray23.length;
+    });
+
+    //要素24//
+    var changeableText24 = document.getElementById('changeableText24');
+    var textArray24 = ['持ってる', '欲しい', 'いらない'];
+    var colorClasses24 = ['color1', 'color2', 'color3'];
+    var currentIndex24 = 0;
+    changeableText24.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText24.innerHTML = textArray24[currentIndex24];
+        // クラスを更新して異なる色を適用
+        changeableText24.className = 'clickable ' + colorClasses24[currentIndex24];
+        // インデックスを更新し、循環するようにする
+        currentIndex24 = (currentIndex24 + 1) % textArray24.length;
+    });
+
+
+        // 特定のURLを指定
+        const specificURL = 'https://na7na712.github.io/st2/'; // あなたが短縮したいURLに置き換えてください
+        const customTweetText = 'あなたもスポトレチェッカーを使ってみる？ #マベスナ #マーベルスナップ #MarvelSnap #スポトレチェッカー'; // カスタムのツイート本文
+
+
+        // コード1: TwitterでURLをシェア
+        const shareButton = document.getElementById("share-button");
+        shareButton.addEventListener("click", () => {
+
+
+            // コード2: 特定のURLを短縮せずにTwitterでシェア
+            const twitterIntentUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(specificURL)}&text=${encodeURIComponent(customTweetText)}`;
+
+            // ツイート用のポップアップウィンドウを開く
+            window.open(twitterIntentUrl, "_blank", "width=600,height=400");
+
+            // ポップアップブロックを回避するためにユーザーアクション後にウィンドウを開く必要があります
         });
+
 
     </script>
 
