@@ -1,0 +1,11 @@
+body {
+  text-align: center; /* ページ全体のテキストを中央に配置 */
+}
+
+
+img {
+  display: block; /* 画像をブロック要素に変更し、水平方向の中央配置のためにmarginをautoに設定 */
+  margin: 0 auto;
+}
+
+
