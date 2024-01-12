@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
                   <li><a href="index.html">TOP</a></li>
                   <li><a href="cardlist.html">カードリスト</a></li>
                   <li><a href="locationlist.html">ロケーションリスト</a></li>
-                  <li><a href="spotlights.html">スポットライトトレジャー</a></li>
                   <li><a href="spotlights_share.html">スポトレチェッカー</a></li>
                   <!-- 他のセクションへのリンクを追加 -->
               </ul>
