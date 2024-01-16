@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="analytics.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotlights-checker</title>
+    <style>
+        p {
+        font-weight: bold;
+        }
+
+        .clickable {
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center; /* テキストを中央揃えにするスタイルを追加 */
+        }
+
+        /* 各テキストに異なる色を設定 */
+        .color  { color: black;}
+        .color1 { color: blue; }
+        .color2 { color: red; }
+        .color3 { color: black; }
+
+        /* ボタン共通のスタイル */
+        .large-button {
+            font-size: 20px; /* フォントサイズを調整してボタンを大きくする */
+            padding: 10px 20px; /* パディングを設定してボタンのサイズを調整 */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Spotlights checker(1/3~2/7)</h1>
+    <p><b>Share your target spotlights with everyone</b></p>
+    <p><b>Click on the text（Don't need→Have it→Want it）</b></p>
+    
+
+    <form>
+    <h2>1/3~1/10</h2>
+        <table>
+            <tr>
+                <td><p id="changeableText1" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText2" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText3" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText4" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText5" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText6" class="clickable color">Don't need</p></td>
+            </tr>
+            <tr>
+                <td><img src="cardimage/caiera.webp" width="100"></a></td>
+                <td><img src="cardimage/caiera13.webp" width="100"></a></td>
+                <td><img src="cardimage/high-evolutionary.webp" width="100"></a></td>
+                <td><img src="cardimage/high-evolutionary13.webp" width="100"></a></td>                
+                <td><img src="cardimage/nebula.webp" width="100"></a></td>
+                <td><img src="cardimage/nebula13.webp" width="100"></a></td>
+            </tr>
+        </table>
+
+    <h2>1/10~1/17</h2>
+        <table>
+            <tr>
+                <td><p id="changeableText7" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText8" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText9" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText10" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText11" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText12" class="clickable color">Don't need</p></td>
+            </tr>
+            <tr>
+                <td><img src="cardimage/hercules.webp" alt="blob" width="100"></a></td>
+                <td><img src="cardimage/hercules110.webp" alt="blob1213" width="100"></a></td>
+                <td><img src="cardimage/werewolf-by-night.webp" width="100"></a></td>
+                <td><img src="cardimage/werewolf-by-night110.webp" width="100"></a></td>
+                <td><img src="cardimage/howard-the-duck.webp" width="100"></a></td>
+                <td><img src="cardimage/howard-the-duck110.webp" width="100"></a></td>
+            </tr>
+        </table>
+
+    <h2>1/17~1/24</h2>
+        <table>
+            <tr>
+                <td><p id="changeableText13" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText14" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText15" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText16" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText17" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText18" class="clickable color">Don't need</p></td>
+            </tr>
+            <tr>
+                <td><img src="cardimage/miek.webp" width="100"></a></td>
+                <td><img src="cardimage/miek117.webp" width="100"></a></td>
+                <td><img src="cardimage/annihilus.webp" width="100"></a></td>
+                <td><img src="cardimage/annihilus117.webp" width="100"></a></td>
+                <td><img src="cardimage/the-phoenix-force.webp" width="100"></a></td>
+                <td><img src="cardimage/the-phoenix-force117.webp" width="100"></a></td>
+
+            </tr>
+        </table>    
+
+    <h2>1/24~1/31</h2>
+        <table>
+            <tr>
+                <td><p id="changeableText19" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText20" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText21" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText22" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText23" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText24" class="clickable color">Don't need</p></td>
+            </tr>
+            <tr>
+                <td><img src="cardimage/grand-master.webp" width="100"></a></td>
+                <td><img src="cardimage/grand-master124.webp" width="100"></a></td>
+                <td><img src="cardimage/loki.webp" width="100"></a></td>
+                <td><img src="cardimage/loki124.webp" width="100"></a></td>
+                <td><img src="cardimage/hit-monkey.webp" width="100"></a></td>
+                <td><img src="cardimage/hit-monkey124.webp" width="100"></a></td>
+            </tr>
+        </table>    
+
+        <h2>1/31~2/7</h2>
+        <table>
+            <tr>
+                <td><p id="changeableText25" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText26" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText27" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText28" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText29" class="clickable color">Don't need</p></td>
+                <td><p id="changeableText30" class="clickable color">Don't need</p></td>
+            </tr>
+            <tr>
+                <td><img src="cardimage/beta-ray-bill.webp" width="100"></a></td>
+                <td><img src="cardimage/beta-ray-bill131.webp" width="100"></a></td>
+                <td><img src="cardimage/galactus.webp" width="100"></a></td>
+                <td><img src="cardimage/galactus131.webp" width="100"></a></td>
+                <td><img src="cardimage/elsa-bloodstone.webp" width="100"></a></td>
+                <td><img src="cardimage/elsa-bloodstone131.webp" width="100"></a></td>
+            </tr>
+        </table>    
+
+        <button type="button" id="share-button" class="large-button">Post with X(Get your screenshot ready)</button>
+    </form>
+
+    <script>
+
+    //要素１//
+    var changeableText1 = document.getElementById('changeableText1');
+    var textArray1 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses1 = ['color1', 'color2', 'color3'];
+    var currentIndex1 = 0;
+    changeableText1.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText1.innerHTML = textArray1[currentIndex1];    
+        // クラスを更新して異なる色を適用
+        changeableText1.className = 'clickable ' + colorClasses1[currentIndex1];
+        // インデックスを更新し、循環するようにする
+        currentIndex1 = (currentIndex1 + 1) % textArray1.length;
+    });
+
+    //要素2//
+    var changeableText2 = document.getElementById('changeableText2');
+    var textArray2 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses2 = ['color1', 'color2', 'color3'];
+    var currentIndex2 = 0;
+    changeableText2.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText2.innerHTML = textArray2[currentIndex2];
+        // クラスを更新して異なる色を適用
+        changeableText2.className = 'clickable ' + colorClasses2[currentIndex2];
+        // インデックスを更新し、循環するようにする
+        currentIndex2 = (currentIndex2 + 1) % textArray2.length;
+    });
+
+    //要素3//
+    var changeableText3 = document.getElementById('changeableText3');
+    var textArray3 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses3 = ['color1', 'color2', 'color3'];
+    var currentIndex3 = 0;
+    changeableText3.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText3.innerHTML = textArray3[currentIndex3];
+        // クラスを更新して異なる色を適用
+        changeableText3.className = 'clickable ' + colorClasses3[currentIndex3];
+        // インデックスを更新し、循環するようにする
+        currentIndex3 = (currentIndex3 + 1) % textArray3.length;
+    });
+
+
+    //要素4//
+    var changeableText4 = document.getElementById('changeableText4');
+    var textArray4 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses4 = ['color1', 'color2', 'color3'];
+    var currentIndex4 = 0;
+    changeableText4.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText4.innerHTML = textArray4[currentIndex4];
+        // クラスを更新して異なる色を適用
+        changeableText4.className = 'clickable ' + colorClasses4[currentIndex4];
+        // インデックスを更新し、循環するようにする
+        currentIndex4 = (currentIndex4 + 1) % textArray4.length;
+    });
+
+    //要素5//
+    var changeableText5 = document.getElementById('changeableText5');
+    var textArray5 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses5 = ['color1', 'color2', 'color3'];
+    var currentIndex5 = 0;
+    changeableText5.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText5.innerHTML = textArray5[currentIndex5];
+        // クラスを更新して異なる色を適用
+        changeableText5.className = 'clickable ' + colorClasses5[currentIndex5];
+        // インデックスを更新し、循環するようにする
+        currentIndex5 = (currentIndex5 + 1) % textArray5.length;
+    });
+
+    //要素6//
+    var changeableText6 = document.getElementById('changeableText6');
+    var textArray6 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses6 = ['color1', 'color2', 'color3'];
+    var currentIndex6 = 0;
+    changeableText6.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText6.innerHTML = textArray6[currentIndex6];
+        // クラスを更新して異なる色を適用
+        changeableText6.className = 'clickable ' + colorClasses6[currentIndex6];
+        // インデックスを更新し、循環するようにする
+        currentIndex6 = (currentIndex6 + 1) % textArray6.length;
+    });
+
+    //要素7//
+    var changeableText7 = document.getElementById('changeableText7');
+    var textArray7 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses7 = ['color1', 'color2', 'color3'];
+    var currentIndex7 = 0;
+    changeableText7.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText7.innerHTML = textArray7[currentIndex7];
+        // クラスを更新して異なる色を適用
+        changeableText7.className = 'clickable ' + colorClasses7[currentIndex7];
+        // インデックスを更新し、循環するようにする
+        currentIndex7 = (currentIndex7 + 1) % textArray7.length;
+    });
+
+    //要素8//
+    var changeableText8 = document.getElementById('changeableText8');
+    var textArray8 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses8 = ['color1', 'color2', 'color3'];
+    var currentIndex8 = 0;
+    changeableText8.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText8.innerHTML = textArray8[currentIndex8];
+        // クラスを更新して異なる色を適用
+        changeableText8.className = 'clickable ' + colorClasses8[currentIndex8];
+        // インデックスを更新し、循環するようにする
+        currentIndex8 = (currentIndex8 + 1) % textArray8.length;
+    });
+
+    //要素9//
+    var changeableText9 = document.getElementById('changeableText9');
+    var textArray9 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses9 = ['color1', 'color2', 'color3'];
+    var currentIndex9 = 0;
+    changeableText9.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText9.innerHTML = textArray9[currentIndex9];
+        // クラスを更新して異なる色を適用
+        changeableText9.className = 'clickable ' + colorClasses9[currentIndex9];
+        // インデックスを更新し、循環するようにする
+        currentIndex9 = (currentIndex9 + 1) % textArray9.length;
+    });
+
+    //要素10//
+    var changeableText10 = document.getElementById('changeableText10');
+    var textArray10 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses10 = ['color1', 'color2', 'color3'];
+    var currentIndex10 = 0;
+    changeableText10.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText10.innerHTML = textArray10[currentIndex10];
+        // クラスを更新して異なる色を適用
+        changeableText10.className = 'clickable ' + colorClasses10[currentIndex10];
+        // インデックスを更新し、循環するようにする
+        currentIndex10 = (currentIndex10 + 1) % textArray10.length;
+    });
+
+    //要素11//
+    var changeableText11 = document.getElementById('changeableText11');
+    var textArray11 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses11 = ['color1', 'color2', 'color3'];
+    var currentIndex11 = 0;
+    changeableText11.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText11.innerHTML = textArray11[currentIndex11];
+        // クラスを更新して異なる色を適用
+        changeableText11.className = 'clickable ' + colorClasses11[currentIndex11];
+        // インデックスを更新し、循環するようにする
+        currentIndex11 = (currentIndex11 + 1) % textArray11.length;
+    });
+
+    //要素12//
+    var changeableText12 = document.getElementById('changeableText12');
+    var textArray12 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses12 = ['color1', 'color2', 'color3'];
+    var currentIndex12 = 0;
+    changeableText12.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText12.innerHTML = textArray12[currentIndex12];
+        // クラスを更新して異なる色を適用
+        changeableText12.className = 'clickable ' + colorClasses12[currentIndex12];
+        // インデックスを更新し、循環するようにする
+        currentIndex12 = (currentIndex12 + 1) % textArray12.length;
+    });
+
+    //要素13//
+    var changeableText13 = document.getElementById('changeableText13');
+    var textArray13 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses13 = ['color1', 'color2', 'color3'];
+    var currentIndex13 = 0;
+    changeableText13.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText13.innerHTML = textArray13[currentIndex13];
+        // クラスを更新して異なる色を適用
+        changeableText13.className = 'clickable ' + colorClasses13[currentIndex13];
+        // インデックスを更新し、循環するようにする
+        currentIndex13 = (currentIndex13 + 1) % textArray13.length;
+    });
+
+    //要素14//
+    var changeableText14 = document.getElementById('changeableText14');
+    var textArray14 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses14 = ['color1', 'color2', 'color3'];
+    var currentIndex14 = 0;
+    changeableText14.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText14.innerHTML = textArray14[currentIndex14];
+        // クラスを更新して異なる色を適用
+        changeableText14.className = 'clickable ' + colorClasses14[currentIndex14];
+        // インデックスを更新し、循環するようにする
+        currentIndex14 = (currentIndex14 + 1) % textArray14.length;
+    });
+
+    //要素15//
+    var changeableText15 = document.getElementById('changeableText15');
+    var textArray15 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses15 = ['color1', 'color2', 'color3'];
+    var currentIndex15 = 0;
+    changeableText15.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText15.innerHTML = textArray15[currentIndex15];
+        // クラスを更新して異なる色を適用
+        changeableText15.className = 'clickable ' + colorClasses15[currentIndex15];
+        // インデックスを更新し、循環するようにする
+        currentIndex15 = (currentIndex15 + 1) % textArray15.length;
+    });
+
+    //要素16//
+    var changeableText16 = document.getElementById('changeableText16');
+    var textArray16 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses16 = ['color1', 'color2', 'color3'];
+    var currentIndex16 = 0;
+    changeableText16.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText16.innerHTML = textArray16[currentIndex16];
+        // クラスを更新して異なる色を適用
+        changeableText16.className = 'clickable ' + colorClasses16[currentIndex16];
+        // インデックスを更新し、循環するようにする
+        currentIndex16 = (currentIndex16 + 1) % textArray16.length;
+    });
+
+    //要素17//
+    var changeableText17 = document.getElementById('changeableText17');
+    var textArray17 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses17 = ['color1', 'color2', 'color3'];
+    var currentIndex17 = 0;
+    changeableText17.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText17.innerHTML = textArray17[currentIndex17];
+        // クラスを更新して異なる色を適用
+        changeableText17.className = 'clickable ' + colorClasses17[currentIndex17];
+        // インデックスを更新し、循環するようにする
+        currentIndex17 = (currentIndex17 + 1) % textArray17.length;
+    });
+
+    //要素18//
+    var changeableText18 = document.getElementById('changeableText18');
+    var textArray18 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses18 = ['color1', 'color2', 'color3'];
+    var currentIndex18 = 0;
+    changeableText18.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText18.innerHTML = textArray18[currentIndex18];
+        // クラスを更新して異なる色を適用
+        changeableText18.className = 'clickable ' + colorClasses18[currentIndex18];
+        // インデックスを更新し、循環するようにする
+        currentIndex18 = (currentIndex18 + 1) % textArray18.length;
+    });
+
+    //要素19//
+    var changeableText19 = document.getElementById('changeableText19');
+    var textArray19 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses19 = ['color1', 'color2', 'color3'];
+    var currentIndex19 = 0;
+    changeableText19.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText19.innerHTML = textArray19[currentIndex19];
+        // クラスを更新して異なる色を適用
+        changeableText19.className = 'clickable ' + colorClasses19[currentIndex19];
+        // インデックスを更新し、循環するようにする
+        currentIndex19 = (currentIndex19 + 1) % textArray19.length;
+    });
+
+    //要素20//
+    var changeableText20 = document.getElementById('changeableText20');
+    var textArray20 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses20 = ['color1', 'color2', 'color3'];
+    var currentIndex20 = 0;
+    changeableText20.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText20.innerHTML = textArray20[currentIndex20];
+        // クラスを更新して異なる色を適用
+        changeableText20.className = 'clickable ' + colorClasses20[currentIndex20];
+        // インデックスを更新し、循環するようにする
+        currentIndex20 = (currentIndex20 + 1) % textArray20.length;
+    });
+
+    //要素21//
+    var changeableText21 = document.getElementById('changeableText21');
+    var textArray21 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses21 = ['color1', 'color2', 'color3'];
+    var currentIndex21 = 0;
+    changeableText21.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText21.innerHTML = textArray21[currentIndex21];
+        // クラスを更新して異なる色を適用
+        changeableText21.className = 'clickable ' + colorClasses21[currentIndex21];
+        // インデックスを更新し、循環するようにする
+        currentIndex21 = (currentIndex21 + 1) % textArray21.length;
+    });
+
+    //要素22//
+    var changeableText22 = document.getElementById('changeableText22');
+    var textArray22 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses22 = ['color1', 'color2', 'color3'];
+    var currentIndex22 = 0;
+    changeableText22.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText22.innerHTML = textArray22[currentIndex22];
+        // クラスを更新して異なる色を適用
+        changeableText22.className = 'clickable ' + colorClasses22[currentIndex22];
+        // インデックスを更新し、循環するようにする
+        currentIndex22 = (currentIndex22 + 1) % textArray22.length;
+    });
+
+    //要素23//
+    var changeableText23 = document.getElementById('changeableText23');
+    var textArray23 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses23 = ['color1', 'color2', 'color3'];
+    var currentIndex23 = 0;
+    changeableText23.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText23.innerHTML = textArray23[currentIndex23];
+        // クラスを更新して異なる色を適用
+        changeableText23.className = 'clickable ' + colorClasses23[currentIndex23];
+        // インデックスを更新し、循環するようにする
+        currentIndex23 = (currentIndex23 + 1) % textArray23.length;
+    });
+
+    //要素24//
+    var changeableText24 = document.getElementById('changeableText24');
+    var textArray24 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses24 = ['color1', 'color2', 'color3'];
+    var currentIndex24 = 0;
+    changeableText24.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText24.innerHTML = textArray24[currentIndex24];
+        // クラスを更新して異なる色を適用
+        changeableText24.className = 'clickable ' + colorClasses24[currentIndex24];
+        // インデックスを更新し、循環するようにする
+        currentIndex24 = (currentIndex24 + 1) % textArray24.length;
+    });
+
+    //要素25//
+    var changeableText25 = document.getElementById('changeableText25');
+    var textArray25 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses25 = ['color1', 'color2', 'color3'];
+    var currentIndex25 = 0;
+    changeableText25.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText25.innerHTML = textArray25[currentIndex25];
+        // クラスを更新して異なる色を適用
+        changeableText25.className = 'clickable ' + colorClasses25[currentIndex25];
+        // インデックスを更新し、循環するようにする
+        currentIndex25 = (currentIndex25 + 1) % textArray25.length;
+    });
+
+    //要素26//
+    var changeableText26 = document.getElementById('changeableText26');
+    var textArray26 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses26 = ['color1', 'color2', 'color3'];
+    var currentIndex26 = 0;
+    changeableText26.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText26.innerHTML = textArray26[currentIndex26];
+        // クラスを更新して異なる色を適用
+        changeableText26.className = 'clickable ' + colorClasses26[currentIndex26];
+        // インデックスを更新し、循環するようにする
+        currentIndex26 = (currentIndex26 + 1) % textArray26.length;
+    });
+
+    //要素27//
+    var changeableText27 = document.getElementById('changeableText27');
+    var textArray27 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses27 = ['color1', 'color2', 'color3'];
+    var currentIndex27 = 0;
+    changeableText27.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText27.innerHTML = textArray27[currentIndex27];
+        // クラスを更新して異なる色を適用
+        changeableText27.className = 'clickable ' + colorClasses27[currentIndex27];
+        // インデックスを更新し、循環するようにする
+        currentIndex27 = (currentIndex27 + 1) % textArray27.length;
+    });
+
+    //要素28//
+    var changeableText28 = document.getElementById('changeableText28');
+    var textArray28 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses28 = ['color1', 'color2', 'color3'];
+    var currentIndex28 = 0;
+    changeableText28.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText28.innerHTML = textArray28[currentIndex28];
+        // クラスを更新して異なる色を適用
+        changeableText28.className = 'clickable ' + colorClasses28[currentIndex28];
+        // インデックスを更新し、循環するようにする
+        currentIndex28 = (currentIndex28 + 1) % textArray28.length;
+    });
+
+    //要素29//
+    var changeableText29 = document.getElementById('changeableText29');
+    var textArray29 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses29 = ['color1', 'color2', 'color3'];
+    var currentIndex29 = 0;
+    changeableText29.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText29.innerHTML = textArray29[currentIndex29];
+        // クラスを更新して異なる色を適用
+        changeableText29.className = 'clickable ' + colorClasses29[currentIndex29];
+        // インデックスを更新し、循環するようにする
+        currentIndex29 = (currentIndex29 + 1) % textArray29.length;
+    });
+
+    //要素30//
+    var changeableText30 = document.getElementById('changeableText30');
+    var textArray30 = ['Have it', 'Want it', "Don't need"];
+    var colorClasses30 = ['color1', 'color2', 'color3'];
+    var currentIndex30 = 0;
+    changeableText30.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText30.innerHTML = textArray30[currentIndex30];
+        // クラスを更新して異なる色を適用
+        changeableText30.className = 'clickable ' + colorClasses30[currentIndex30];
+        // インデックスを更新し、循環するようにする
+        currentIndex30 = (currentIndex30 + 1) % textArray30.length;
+    });
+
+
+
+        // 特定のURLを指定
+        const specificURL = 'https://na7na712.github.io/st2en/'; // あなたが短縮したいURLに置き換えてください
+        const customTweetText = 'Would you like to try Spotlights Checker too? #MarvelSnap #Spotlightschecker'; // カスタムのツイート本文
+
+
+        // コード1: TwitterでURLをシェア
+        const shareButton = document.getElementById("share-button");
+        shareButton.addEventListener("click", () => {
+
+
+            // コード2: 特定のURLを短縮せずにTwitterでシェア
+            const twitterIntentUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(specificURL)}&text=${encodeURIComponent(customTweetText)}`;
+
+            // ツイート用のポップアップウィンドウを開く
+            window.open(twitterIntentUrl, "_blank", "width=600,height=400");
+
+            // ポップアップブロックを回避するためにユーザーアクション後にウィンドウを開く必要があります
+        });
+
+
+    </script>
+
+</body>
+</html>
