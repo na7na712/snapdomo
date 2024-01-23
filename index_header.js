@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   <li><a href="../index.html">TOP</a></li>
                   <li><a href="../cardlist.html">カードリスト</a></li>
                   <li><a href="../locationlist.html">ロケーションリスト</a></li>
-                  <li><a href="../spotlights_share.html">スポトレチェッカー：日本語ver</a></li>
-                  <li><a href="../spotlights_share_en.html">スポトレチェッカー：英語ver</a></li>
+                  <li><a href="../spotlights_share.html">スポトレチェッカー</a></li>
+                  <li><a href="../report.html">デッキ紹介</a></li>
                   <!-- 他のセクションへのリンクを追加 -->
               </ul>
           </nav>
