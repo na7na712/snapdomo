@@ -4,12 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
         <header>
             <nav>
                 <ul>
+                    <h1>マベスナドーモ</h1>
+                </ul>
+
+                <ul>
                     <li><a href="index.html">TOP</a></li>
                     <li><a href="cardlist.html">カードリスト</a></li>
                     <li><a href="locationlist.html">ロケーションリスト</a></li>
                     <li><a href="spotlights_share.html">スポトレチェッカー</a></li>
                     <li><a href="report.html">デッキ紹介</a></li>
-                    <li><a href="https://twitter.com/NANA1051815">お問い合わせはこちら</a></li>
+                    <li><a href="https://twitter.com/NANA1051815">お問い合わせ</a></li>
                     <!-- 他のセクションへのリンクを追加 -->
                 </ul>
                 <ul>

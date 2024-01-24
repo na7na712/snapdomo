@@ -25,6 +25,10 @@ header nav ul li {
   margin-right: 20px;
 }
 
+header nav ul h1 {
+  color: #ffd700;
+}
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -36,7 +40,7 @@ header nav ul li a:hover {
 }
 
 section {
-  padding: 175px 20px 20px;
+  padding: 300px 20px 20px;
 }
 
 section h2 {
