@@ -1,10 +1,14 @@
 // JavaScriptファイル（例: script.js）
-(function() {
-  var scriptAds = document.createElement('script');
-  scriptAds.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9769812822312738';
-  scriptAds.crossOrigin = 'anonymous';
-  document.head.appendChild(scriptAds);
-})();
+// meta.js
+
+// METAタグの作成
+var adsenseMetaTag = document.createElement('meta');
+adsenseMetaTag.name = 'google-adsense-account';
+adsenseMetaTag.content = 'ca-pub-9769812822312738'; // この部分は実際のコードに置き換える
+
+// HEAD要素にMETAタグを追加
+document.head.appendChild(adsenseMetaTag);
+
 
 // 非同期でGoogle Tag Managerのスクリプトを読み込む
 var scriptTag = document.createElement('script');
