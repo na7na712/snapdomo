@@ -1,4 +1,10 @@
 // JavaScriptファイル（例: script.js）
+(function() {
+  var scriptAds = document.createElement('script');
+  scriptAds.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9769812822312738';
+  scriptAds.crossOrigin = 'anonymous';
+  document.head.appendChild(scriptAds);
+})();
 
 // 非同期でGoogle Tag Managerのスクリプトを読み込む
 var scriptTag = document.createElement('script');
