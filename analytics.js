@@ -1,7 +1,14 @@
-// JavaScriptファイル（例: script.js）
+// combined.js
 
+// Code 1: ads.js
+(function() {
+  var scriptAds = document.createElement('script');
+  scriptAds.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9769812822312738';
+  scriptAds.crossOrigin = 'anonymous';
+  document.head.appendChild(scriptAds);
+})();
 
-
+// Code 2: script.js
 // 非同期でGoogle Tag Managerのスクリプトを読み込む
 var scriptTag = document.createElement('script');
 scriptTag.async = true;
@@ -10,13 +17,13 @@ document.head.appendChild(scriptTag);
 
 // スクリプトが読み込まれた後に実行される関数
 scriptTag.onload = function() {
-  // Google Tag Managerの初期化
-  window.dataLayer = window.dataLayer || [];
-  
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+// Google Tag Managerの初期化
+window.dataLayer = window.dataLayer || [];
 
-  gtag('js', new Date());
-  gtag('config', 'G-RCLT2WB2EF');
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'G-RCLT2WB2EF');
 };
