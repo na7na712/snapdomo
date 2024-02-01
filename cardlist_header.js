@@ -1,22 +1,42 @@
 // navigation.js
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show-menu');
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const navigationHTML = `
       <header>
           <nav>
-            <ul>
-                <h1>マベスナドーモ</h1>
-            </ul>
-            <ul>
-                <li><a href="index.html">TOP</a></li>
-                <li><a href="cardlist.html">カードリスト</a></li>
-                <li><a href="locationlist.html">ロケーションリスト</a></li>
-                <li><a href="spotlights_share.html">スポトレチェッカー</a></li>
-                <li><a href="report.html">デッキ紹介</a></li>
-                <li><a href="https://youtube.com/@user-du9lf6dp6j?si=o5AJApS_udRf5CVF">YouTube</a></li>
-                <li><a href="https://twitter.com/NANA1051815">お問い合わせ(X)</a></li>
-                <!-- 他のセクションへのリンクを追加 -->
-            </ul>
-            <ul>
+          
+          <div class="navbar">
+                
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+          
+            <span id="title"><b>スナップドーモ</b></span>
+
+  
+            <div class="menu">
+              <!-- Your navigation links go here -->
+              <a href="index.html">TOP</a>
+              <a href="cardlist.html">カードリスト</a>
+              <a href="locationlist.html">ロケーションリスト</a>
+              <a href="spotlights_share.html">スポトレチェッカー</a>
+              <a href="report.html">デッキ紹介</a>
+              <a href="https://youtube.com/@user-du9lf6dp6j?si=o5AJApS_udRf5CVF">YouTube</a>
+              <a href="https://twitter.com/NANA1051815">お問い合わせ(X)</a>
+            </div>
+
+            </div>
+          
+            
+          
+            <div class="cost">
                 <!-- ナビゲーションリンク -->
                 <li><a href="#section0">0コスト</a></li>
                 <li><a href="#section1">1コスト</a></li>
@@ -26,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="#section5">5コスト</a></li>
                 <li><a href="#section6">6コスト</a></li>
                 <li><a href="#section7">7コスト以上</a></li>
-            </ul>
+            </div>
+            
+          
           </nav>
       </header>
   `;

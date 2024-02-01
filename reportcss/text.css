@@ -5,49 +5,94 @@ img {
   margin: 0 auto;
 }
 
-
 body {
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  z-index: 1000;
+  width: 100%; /* メニューの幅が100%になるように指定 */
+  top: 0; /* ページの上端に固定 */
+
 }
 
-header nav ul {
+#title {
+  text-align: center; /* テキストを中央に配置 */
+  margin: 0px 50px 0px 0px; /* 左右の余白を自動で均等に設定 */
+  color: #ffd700; /* テキストの色を白に設定（任意の色に変更可能） */
+}
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.menu {
+  display: none;
+}
+
+
+
+.menu.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu.show-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+
+.cost {
+  background-color: #333;
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
-}
-
-header nav ul li {
-  margin-right: 20px;
-}
-
-header nav ul h1 {
-  color: #ffd700;
-}
-
-header nav ul li a {
-  color: #fff;
+  padding: 0px 0px 0px 60px;
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav ul li a:hover {
-  color: #ffd700;
+.cost a {
+  color: white;
+}
+
+.cost li {
+  margin-right: 20px;
 }
 
 section {
-  padding: 175px 20px 20px;
+  padding: 75px 20px 20px;
+}
+
+section h2 {
+  color: #333;
+}
+
+section p {
+  color: #666;
 }
 
