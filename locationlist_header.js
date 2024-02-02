@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <div class="line"></div>
           </div>
         
-          <span id="title"><b>スナップドーモ</b></span>
+          <span id="title"><b>マベスナドーモ</b></span>
 
 
           <div class="menu">
