@@ -96,3 +96,12 @@ section p {
   color: #666;
 }
 
+.section02 {
+  padding: 75px 0px 0px;
+}
+
+.mokuji {
+  border: 2px solid #000; /* 枠線のスタイルを指定します */
+  border-radius: 5px; /* 角丸にする場合に指定します */
+  padding: 10px; /* 目次と枠の間のスペースを調整します */
+}
