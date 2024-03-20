@@ -9,3 +9,6 @@ img {
 }
 
 
+table {
+  margin: 0 auto; /* テーブルを中央揃えにする */
+}
