@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="cardlist.html">カードリスト</a>
                     <a href="locationlist.html">ロケーションリスト</a>
                     <a href="spotlights_share.html">スポトレチェッカー</a>
+                    <a href="spotlights_open.html">スポトレシミュレーター</a>
                     <a href="report.html">デッキ紹介</a>
                     <a href="https://youtube.com/@user-du9lf6dp6j?si=o5AJApS_udRf5CVF">YouTube</a>
                     <a href="https://twitter.com/NANA1051815">お問い合わせ(X)</a>

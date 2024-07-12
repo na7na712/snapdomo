@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スポトレシミュレーター</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #shuffleButton {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        #shuffleButton:hover {
+            background-color: #218838;
+        }
+        #cardContainer {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .card {
+            position: relative; /* 要素の相対位置指定 */
+            text-align: center; /* テキストの中央揃え */
+        }
+        .card img {
+            width: 100px;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-number {
+            position: relative; /* 要素の相対位置指定 */
+            text-align: center; /* テキストの中央揃え */
+            background-color: rgba(255, 255, 255, 0.8); /* 背景色（透明度付き） */
+            padding: 2px 5px; /* 内側の余白 */
+            border-radius: 3px; /* 角丸 */
+        }
+    </style>
+</head>
+<body>
+    <h2>スポトレ開封前の運試し</h2>
+    <button id="shuffleButton">開封</button>
+    <div id="cardContainer"></div>
+    <a href="index.html"><b>TOPに戻る</b></a>
+
+    <script>
+        // Fisher-Yatesシャッフルアルゴリズムを使って配列をシャッフルする関数
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // 4枚のカードとその画像パスをオブジェクトとして定義
+        let cards = [
+            { img: 'cardimage/bob-from-hydra.webp' },
+            { img: 'cardimage/nebula.webp' },
+            { img: 'cardimage/galactus.webp' },
+            { name: 'D' }
+        ];
+
+        // 追加カードとその画像パスをオブジェクトとして定義
+        let extraCards = [
+            { img: 'cardimage/daken.webp' }, //シリーズ４
+            { img: 'cardimage/darkhawk.webp' },
+            { img: 'cardimage/ghost-spider.webp' },
+            { img: 'cardimage/gladiator.webp' },
+            { img: 'cardimage/havok.webp' },
+            { img: 'cardimage/herculs.webp' },
+            { img: 'cardimage/hit-monkey.webp' },
+            { img: 'cardimage/jean-grey.webp' },
+            { img: 'cardimage/kitty-pryde.webp' },
+            { img: 'cardimage/knull.webp' },
+            { img: 'cardimage/lady-deathstrike.webp' },
+            { img: 'cardimage/legion.webp' },
+            { img: 'cardimage/man-thing.webp' },
+            { img: 'cardimage/miek.webp' },
+            { img: 'cardimage/mobius-m-mobius.webp' },
+            { img: 'cardimage/modok.webp' },
+            //{ img: 'cardimage/nebula.webp' },
+            { img: 'cardimage/nimrod.webp' },
+            { img: 'cardimage/ravanna-renslayer.webp' },
+            { img: 'cardimage/selene.webp' },
+            { img: 'cardimage/silk.webp' },
+            { img: 'cardimage/snowguard.webp' },
+            { img: 'cardimage/spider-ham.webp' },
+            { img: 'cardimage/the-living-tribunal.webp' },
+            { img: 'cardimage/the-phoenix-force.webp' },
+            { img: 'cardimage/zabu.webp' },
+            //{ img: 'cardimage/ajax.webp' }, //シリーズ５ 
+            { img: 'cardimage/alioth.webp' },
+            { img: 'cardimage/annihilus.webp' },
+            { img: 'cardimage/arishem.webp' },
+            { img: 'cardimage/Baron-Zemo.webp' },
+            { img: 'cardimage/beta-ray-bill.webp' },
+            { img: 'cardimage/blak-knight.webp' },
+            { img: 'cardimage/BlackSwan.webp' },
+            { img: 'cardimage/blink.webp' },
+            { img: 'cardimage/blob.webp' },
+            //{ img: 'cardimage/bob-from-hydra.webp' },
+            { img: 'cardimage/caiera.webp' },
+            { img: 'cardimage/cannonball.webp' },
+            //{ img: 'cardimage/cassandra-nova.webp' },
+            //{ img: 'cardimage/copycat.webp' },
+            { img: 'cardimage/corvus-glaive.webp' },
+            { img: 'cardimage/cull-obsidian.webp' },
+            { img: 'cardimage/elsa-bloodstone.webp' },
+            //{ img: 'cardimage/galactus.webp' },
+            { img: 'cardimage/gilgamesh.webp' },
+            { img: 'cardimage/grand-master.webp' },
+            { img: 'cardimage/high-evolutionary.webp' },
+            { img: 'cardimage/hope-summers.webp' },
+            { img: 'cardimage/iron-lad.webp' },
+            { img: 'cardimage/jeff-the-baby-land-shark.webp' },
+            { img: 'cardimage/kang.webp' },
+            { img: 'cardimage/loki.webp' },
+            { img: 'cardimage/makkari.webp' },
+            { img: 'cardimage/mockingbird.webp' },
+            { img: 'cardimage/ms-marvel.webp' },
+            { img: 'cardimage/namora.webp' },
+            { img: 'cardimage/nico-minoru.webp' },
+            { img: 'cardimage/nocturne.webp' },
+            { img: 'cardimage/phastos.webp' },
+            { img: 'cardimage/pixie.webp' },
+            { img: 'cardimage/proxima-midnight.webp' },
+            { img: 'cardimage/red-guardian.webp' },
+            { img: 'cardimage/red-hulk.webp' },
+            { img: 'cardimage/sage.webp' },
+            { img: 'cardimage/sasquatch.webp' },
+            { img: 'cardimage/sebastian-shaw.webp' },
+            { img: 'cardimage/sersi.webp' },
+            { img: 'cardimage/skaar.webp' },
+            { img: 'cardimage/supergiant.webp' },
+            { img: 'cardimage/thanos.webp' },
+            { img: 'cardimage/thena.webp' },
+            { img: 'cardimage/us-agent.webp' },
+            { img: 'cardimage/valentina.webp' },
+            { img: 'cardimage/war-machine.webp' },
+            { img: 'cardimage/werewolf-by-night.webp' },
+            { img: 'cardimage/white-widowx-23.webp' }
+        ];
+
+
+        // シャッフルボタンのクリックイベントリスナー
+        document.getElementById('shuffleButton').addEventListener('click', function() {
+            let shuffledCards = shuffle([...cards]); // カードをシャッフル
+            displayCards(shuffledCards); // シャッフル結果を表示
+        });
+
+        // カードをHTMLに表示する関数
+        function displayCards(cards) {
+            const cardContainer = document.getElementById('cardContainer');
+            cardContainer.innerHTML = ''; // 以前のカード表示をクリア
+
+            cards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                
+                if (card.name === 'D') {
+                    // Dのカードを26枚のカードの中からランダムに選んだカードと置き換える
+                    let selectedExtraCard = extraCards[Math.floor(Math.random() * extraCards.length)];
+                    cardElement.innerHTML = `<img src="${selectedExtraCard.img}" alt="">`;
+                } else {
+                    cardElement.innerHTML = `<img src="${card.img}" alt="">`;
+                }
+
+                // カード番号を表示する要素を作成し、カード要素に追加する
+                const cardNumberElement = document.createElement('div');
+                cardNumberElement.className = 'card-number';
+                cardNumberElement.textContent = `${index + 1}本目`; // インデックスを1から始めるため、+1する
+                cardElement.appendChild(cardNumberElement);
+
+                cardContainer.appendChild(cardElement);
+            });
+        }
+    </script>
+</body>
+</html>
