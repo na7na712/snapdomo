@@ -52,6 +52,7 @@
     <h2>スポトレ開封前の運試し</h2>
     <button id="shuffleButton">開封</button>
     <div id="cardContainer"></div>
+    <button type="button" id="share-button" class="large-button">Xでポストする(スクショを準備してね)</button>
     <a href="index.html"><b>TOPに戻る</b></a>
 
     <script>
@@ -187,6 +188,26 @@
                 cardContainer.appendChild(cardElement);
             });
         }
+
+        // 特定のURLを指定
+        const specificURL = 'https://marvelsnapdomo.com/spotlights_open.html'; // あなたが短縮したいURLに置き換えてください
+        const customTweetText = 'あなたもスポトレシミュレーターを使ってみる？ #マベスナ #マーベルスナップ #MarvelSnap #スポトレシミュレーター'; // カスタムのツイート本文
+
+
+        // コード1: TwitterでURLをシェア
+        const shareButton = document.getElementById("share-button");
+        shareButton.addEventListener("click", () => {
+
+
+            // コード2: 特定のURLを短縮せずにTwitterでシェア
+            const twitterIntentUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(specificURL)}&text=${encodeURIComponent(customTweetText)}`;
+
+            // ツイート用のポップアップウィンドウを開く
+            window.open(twitterIntentUrl, "_blank", "width=600,height=400");
+
+            // ポップアップブロックを回避するためにユーザーアクション後にウィンドウを開く必要があります
+        });
+
     </script>
 </body>
 </html>
