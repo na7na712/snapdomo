@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script src="analytics.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コレトレチェッカー</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          z-index: 1000;
+        }
+    
+        header nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+        }
+    
+        header nav ul li {
+          margin-right: 20px;
+        }
+    
+        header nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        header nav ul li a:hover {
+          color: #ffd700;
+        }
+    
+
+    
+        section h2 {
+          color: #333;
+        }
+    
+        p {
+        font-weight: bold;
+        }
+
+        .clickable {
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center; /* テキストを中央揃えにするスタイルを追加 */
+        }
+
+        /* 各テキストに異なる色を設定 */
+        .color  { color: black;}
+        .color1 { color: blue; }
+        .color2 { color: red; }
+        .color3 { color: black; }
+
+        /* ボタン共通のスタイル */
+        .large-button {
+            font-size: 20px; /* フォントサイズを調整してボタンを大きくする */
+            padding: 10px 20px; /* パディングを設定してボタンのサイズを調整 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h1>コレトレチェッカー(11/6~12/4)</h1>
+        <p><b>おすすめのスポットライトトレジャーを皆にシェアしよう</b></p>
+        <p><b>文字をクリックしてね（取らない→余裕があればトレ！→コレトレ！！）</b></p>
+        <p><b>カードをクリックで詳細表示<br>(クリック情報は保持されません。ページを離れると初期状態に戻ります。)</b></p>
+        
+    
+        <form>
+        <h2>11/6~11/13</h2>
+            <table>
+                <tr>
+                    <td><p id="changeableText1" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText2" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText3" class="clickable color">取らない</p></td>
+                </tr>
+                <tr>
+                    <td><a href="cardtext/frigga.html"><img src="cardimage/frigga.webp" width="150"></a></td>
+                    <td><a href="cardtext/copycat.html"><img src="cardimage/copycat.webp" width="150"></a></td>
+                    <td><a href="cardtext/red-guardian.html"><img src="cardimage/red-guardian.webp" width="150"></a></td>
+                </tr>
+            </table>
+    
+        <h2>11/13~11/20</h2>
+            <table>
+                <tr>
+                    <td><p id="changeableText4" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText5" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText6" class="clickable color">取らない</p></td>
+                </tr>
+                <tr>
+                    <td><a href="cardtext/malekith.html"><img src="cardimage/malekith.webp" width="150"></a></td>
+                    <td><a href="cardtext/thena.html"><img src="cardimage/thena.webp" width="150"></a></td>
+                    <td><a href="cardtext/valentina.html"><img src="cardimage/valentina.webp" width="150"></a></td>
+                </tr>
+            </table>
+    
+        <h2>11/20~11/27</h2>
+            <table>
+                <tr>
+                    <td><p id="changeableText7" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText8" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText9" class="clickable color">取らない</p></td>
+                </tr>
+                <tr>
+                    <td><a href="cardtext/fenris-wolf.html"><img src="cardimage/fenris-wolf.webp" width="150"></a></td>
+                    <td><a href="cardtext/annihilus.html"><img src="cardimage/annihilus.webp" width="150"></a></td>
+                    <td><a href="cardtext/werewolf-by-night.html"><img src="cardimage/werewolf-by-night.webp" width="150"></a></td>
+                </tr>
+            </table>    
+    
+        <h2>11/27~12/4</h2>
+            <table>
+                <tr>
+                    <td><p id="changeableText10" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText11" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText12" class="clickable color">取らない</p></td>
+                </tr>
+                <tr>
+                    <td><a href="cardtext/gorr.html"><img src="cardimage/gorr.webp" width="150"></a></td>
+                    <td><a href="cardtext/havok.html"><img src="cardimage/havok.webp" width="150"></a></td>
+                    <td><a href="cardtext/legion.html"><img src="cardimage/legion.webp" width="150"></a></td>
+                </tr>
+            </table>    
+<!--    
+        <h2>10/30~11/6</h2>
+            <table>
+                <tr>
+                    <td><p id="changeableText13" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText14" class="clickable color">取らない</p></td>
+                    <td><p id="changeableText15" class="clickable color">取らない</p></td>
+                </tr>
+                <tr>
+                    <td><a href="cardtext/.html"><img src="cardimage/anti-venom.webp" width="150"></a></td>
+                    <td><a href="cardtext/ghostspider.html"><img src="cardimage/ghost-spider.webp" width="150"></a></td>
+                    <td><a href="cardtext/supergiant.html"><img src="cardimage/supergiant.webp" width="150"></a></td>
+                </tr>
+            </table>        
+-->
+            <button type="button" id="share-button" class="large-button">Xでポストする(スクショを準備してね)</button>
+            <a href="index.html"><b>TOPに戻る</b></a>
+        </form>
+        </section>
+
+    <script>
+
+    //要素１//
+    var changeableText1 = document.getElementById('changeableText1');
+    var textArray1 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses1 = ['color1', 'color2', 'color3'];
+    var currentIndex1 = 0;
+    changeableText1.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText1.innerHTML = textArray1[currentIndex1];    
+        // クラスを更新して異なる色を適用
+        changeableText1.className = 'clickable ' + colorClasses1[currentIndex1];
+        // インデックスを更新し、循環するようにする
+        currentIndex1 = (currentIndex1 + 1) % textArray1.length;
+    });
+
+    //要素2//
+    var changeableText2 = document.getElementById('changeableText2');
+    var textArray2 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses2 = ['color1', 'color2', 'color3'];
+    var currentIndex2 = 0;
+    changeableText2.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText2.innerHTML = textArray2[currentIndex2];
+        // クラスを更新して異なる色を適用
+        changeableText2.className = 'clickable ' + colorClasses2[currentIndex2];
+        // インデックスを更新し、循環するようにする
+        currentIndex2 = (currentIndex2 + 1) % textArray2.length;
+    });
+
+    //要素3//
+    var changeableText3 = document.getElementById('changeableText3');
+    var textArray3 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses3 = ['color1', 'color2', 'color3'];
+    var currentIndex3 = 0;
+    changeableText3.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText3.innerHTML = textArray3[currentIndex3];
+        // クラスを更新して異なる色を適用
+        changeableText3.className = 'clickable ' + colorClasses3[currentIndex3];
+        // インデックスを更新し、循環するようにする
+        currentIndex3 = (currentIndex3 + 1) % textArray3.length;
+    });
+
+
+    //要素4//
+    var changeableText4 = document.getElementById('changeableText4');
+    var textArray4 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses4 = ['color1', 'color2', 'color3'];
+    var currentIndex4 = 0;
+    changeableText4.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText4.innerHTML = textArray4[currentIndex4];
+        // クラスを更新して異なる色を適用
+        changeableText4.className = 'clickable ' + colorClasses4[currentIndex4];
+        // インデックスを更新し、循環するようにする
+        currentIndex4 = (currentIndex4 + 1) % textArray4.length;
+    });
+
+    //要素5//
+    var changeableText5 = document.getElementById('changeableText5');
+    var textArray5 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses5 = ['color1', 'color2', 'color3'];
+    var currentIndex5 = 0;
+    changeableText5.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText5.innerHTML = textArray5[currentIndex5];
+        // クラスを更新して異なる色を適用
+        changeableText5.className = 'clickable ' + colorClasses5[currentIndex5];
+        // インデックスを更新し、循環するようにする
+        currentIndex5 = (currentIndex5 + 1) % textArray5.length;
+    });
+
+    //要素6//
+    var changeableText6 = document.getElementById('changeableText6');
+    var textArray6 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses6 = ['color1', 'color2', 'color3'];
+    var currentIndex6 = 0;
+    changeableText6.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText6.innerHTML = textArray6[currentIndex6];
+        // クラスを更新して異なる色を適用
+        changeableText6.className = 'clickable ' + colorClasses6[currentIndex6];
+        // インデックスを更新し、循環するようにする
+        currentIndex6 = (currentIndex6 + 1) % textArray6.length;
+    });
+
+    //要素7//
+    var changeableText7 = document.getElementById('changeableText7');
+    var textArray7 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses7 = ['color1', 'color2', 'color3'];
+    var currentIndex7 = 0;
+    changeableText7.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText7.innerHTML = textArray7[currentIndex7];
+        // クラスを更新して異なる色を適用
+        changeableText7.className = 'clickable ' + colorClasses7[currentIndex7];
+        // インデックスを更新し、循環するようにする
+        currentIndex7 = (currentIndex7 + 1) % textArray7.length;
+    });
+
+    //要素8//
+    var changeableText8 = document.getElementById('changeableText8');
+    var textArray8 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses8 = ['color1', 'color2', 'color3'];
+    var currentIndex8 = 0;
+    changeableText8.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText8.innerHTML = textArray8[currentIndex8];
+        // クラスを更新して異なる色を適用
+        changeableText8.className = 'clickable ' + colorClasses8[currentIndex8];
+        // インデックスを更新し、循環するようにする
+        currentIndex8 = (currentIndex8 + 1) % textArray8.length;
+    });
+
+    //要素9//
+    var changeableText9 = document.getElementById('changeableText9');
+    var textArray9 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses9 = ['color1', 'color2', 'color3'];
+    var currentIndex9 = 0;
+    changeableText9.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText9.innerHTML = textArray9[currentIndex9];
+        // クラスを更新して異なる色を適用
+        changeableText9.className = 'clickable ' + colorClasses9[currentIndex9];
+        // インデックスを更新し、循環するようにする
+        currentIndex9 = (currentIndex9 + 1) % textArray9.length;
+    });
+
+    //要素10//
+    var changeableText10 = document.getElementById('changeableText10');
+    var textArray10 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses10 = ['color1', 'color2', 'color3'];
+    var currentIndex10 = 0;
+    changeableText10.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText10.innerHTML = textArray10[currentIndex10];
+        // クラスを更新して異なる色を適用
+        changeableText10.className = 'clickable ' + colorClasses10[currentIndex10];
+        // インデックスを更新し、循環するようにする
+        currentIndex10 = (currentIndex10 + 1) % textArray10.length;
+    });
+
+    //要素11//
+    var changeableText11 = document.getElementById('changeableText11');
+    var textArray11 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses11 = ['color1', 'color2', 'color3'];
+    var currentIndex11 = 0;
+    changeableText11.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText11.innerHTML = textArray11[currentIndex11];
+        // クラスを更新して異なる色を適用
+        changeableText11.className = 'clickable ' + colorClasses11[currentIndex11];
+        // インデックスを更新し、循環するようにする
+        currentIndex11 = (currentIndex11 + 1) % textArray11.length;
+    });
+
+    //要素12//
+    var changeableText12 = document.getElementById('changeableText12');
+    var textArray12 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses12 = ['color1', 'color2', 'color3'];
+    var currentIndex12 = 0;
+    changeableText12.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText12.innerHTML = textArray12[currentIndex12];
+        // クラスを更新して異なる色を適用
+        changeableText12.className = 'clickable ' + colorClasses12[currentIndex12];
+        // インデックスを更新し、循環するようにする
+        currentIndex12 = (currentIndex12 + 1) % textArray12.length;
+    });
+
+/*    //要素13//
+    var changeableText13 = document.getElementById('changeableText13');
+    var textArray13 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses13 = ['color1', 'color2', 'color3'];
+    var currentIndex13 = 0;
+    changeableText13.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText13.innerHTML = textArray13[currentIndex13];
+        // クラスを更新して異なる色を適用
+        changeableText13.className = 'clickable ' + colorClasses13[currentIndex13];
+        // インデックスを更新し、循環するようにする
+        currentIndex13 = (currentIndex13 + 1) % textArray13.length;
+    });
+
+    //要素14//
+    var changeableText14 = document.getElementById('changeableText14');
+    var textArray14 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses14 = ['color1', 'color2', 'color3'];
+    var currentIndex14 = 0;
+    changeableText14.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText14.innerHTML = textArray14[currentIndex14];
+        // クラスを更新して異なる色を適用
+        changeableText14.className = 'clickable ' + colorClasses14[currentIndex14];
+        // インデックスを更新し、循環するようにする
+        currentIndex14 = (currentIndex14 + 1) % textArray14.length;
+    });
+
+    //要素15//
+    var changeableText15 = document.getElementById('changeableText15');
+    var textArray15 = ['余裕があればトレ！', 'コレトレ！！', '取らない'];
+    var colorClasses15 = ['color1', 'color2', 'color3'];
+    var currentIndex15 = 0;
+    changeableText15.addEventListener('click', function() {
+        // 配列内の次のテキストと色に切り替え
+        changeableText15.innerHTML = textArray15[currentIndex15];
+        // クラスを更新して異なる色を適用
+        changeableText15.className = 'clickable ' + colorClasses15[currentIndex15];
+        // インデックスを更新し、循環するようにする
+        currentIndex15 = (currentIndex15 + 1) % textArray15.length;
+    });
+*/
+
+
+        // 特定のURLを指定
+        const specificURL = 'https://marvelsnapdomo.com/koretore.html'; // あなたが短縮したいURLに置き換えてください
+        const customTweetText = '#マベスナ #マーベルスナップ #MarvelSnap #コレトレチェッカー'; // カスタムのツイート本文
+
+
+        // コード1: TwitterでURLをシェア
+        const shareButton = document.getElementById("share-button");
+        shareButton.addEventListener("click", () => {
+
+
+            // コード2: 特定のURLを短縮せずにTwitterでシェア
+            const twitterIntentUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(specificURL)}&text=${encodeURIComponent(customTweetText)}`;
+
+            // ツイート用のポップアップウィンドウを開く
+            window.open(twitterIntentUrl, "_blank", "width=600,height=400");
+
+            // ポップアップブロックを回避するためにユーザーアクション後にウィンドウを開く必要があります
+        });
+
+
+    </script>
+
+</body>
+</html>
