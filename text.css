@@ -12,3 +12,8 @@ img {
 table {
   margin: 0 auto; /* テーブルを中央揃えにする */
 }
+
+.one_point::before {
+  content: "★ ちょっと一言 ★";
+  color: red;
+}
