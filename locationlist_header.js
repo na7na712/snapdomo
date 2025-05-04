@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="index.html">TOP</a>
             <a href="cardlist.html">カードリスト</a>
             <a href="locationlist.html">ロケーションリスト</a>
-            <a href="spotlights_share.html">スポトレチェッカー</a>
+            <a href="spotlights_share.html">スナッパチェッカー</a>
             <a href="koretore.html">コレトレチェッカー</a>
             <a href="spotlights_open.html">スポトレシミュレーター</a>
             <a href="report.html">デッキ紹介</a>
